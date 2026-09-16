@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raphaella van Eijk — Portfolio | CMD Breda</title>
+  <meta name="description" content="Portfolio van Raphaella van Eijk. Communication & Multimedia Design studente aan Avans Hogeschool Breda. Visuele identiteit, 3D packaging, print en conceptueel design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="pencil-trail-canvas" aria-hidden="true"></canvas>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-wrapper" title="Raphaella van Eijk Portfolio">
+        <div class="brand-title">
+          <span>Raphaella van Eijk</span>
+          <span class="tagline">A little chaotic • Very curious • Always creating</span>
+        </div>
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Toggle navigatie menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="project.html" class="nav-link">Project</a></li>
+          <li><a href="#contact" class="nav-link nav-contact-btn">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (Wireframe 1: NAAM + KORTE BIO + FOTO BOX MET FOTO PLACEHOLDER) -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content-col">
+          <h1 class="hero-title">
+            Hoi, ik ben <span class="highlight">Raphaella</span> van Eijk.
+          </h1>
+
+          <div class="hero-bio-card">
+            <div class="hero-bio-copy">
+              <p><strong>A little chaotic, very curious, always creating.</strong></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Portrait Polaroid Frame with 3 Pop-up Cards Behind -->
+        <div class="hero-visual-frame" id="hero-profile-frame" tabindex="0" aria-label="Profiel foto met uitwaaierende schetsen">
+          <!-- 3 cards popping up from behind the profile picture -->
+          <figure class="behind-profile-card behind-card-1 zoomable" data-full="images/posterschets1.jpg" title="Posterschets">
+            <div class="behind-washi-tape"></div>
+            <img src="images/posterschets1.jpg" alt="Posterschets">
+          </figure>
+
+          <figure class="behind-profile-card behind-card-2 zoomable" data-full="images/can_trio.png" title="AquaClean 3D">
+            <div class="behind-washi-tape"></div>
+            <img src="images/can_trio.png" alt="AquaClean 3D">
+          </figure>
+
+          <figure class="behind-profile-card behind-card-3 zoomable" data-full="images/sketches_1.png" title="Schetsboek">
+            <div class="behind-washi-tape"></div>
+            <img src="images/sketches_1.png" alt="Schetsboek">
+          </figure>
+
+          <!-- Main Profile Polaroid Card on top -->
+          <div class="polaroid-card">
+            <div class="washi-tape-torn"></div>
+            <div class="polaroid-img-box">
+              <img src="images/profielfoto.jpg" alt="Portretfoto van Raphaella van Eijk" class="zoomable" data-caption="Raphaella van Eijk">
+            </div>
+            <div class="polaroid-caption">
+              <strong>Raphaella van Eijk</strong>
+              <span>CMD Breda Student</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY WORK / SCHETSBOEK PROJECT CAROUSEL -->
+  <section class="sketchbook-section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Mijn werk</h2>
+        <p class="section-subtitle">
+          Scroll door mijn projecten
+        </p>
+      </div>
+
+      <div class="project-carousel-wrapper" id="home-project-carousel">
+        <div class="carousel-top-bar">
+          <span class="carousel-hint">Swipe of gebruik de pijlen om verder te kijken</span>
+          <div class="carousel-nav-controls">
+            <button class="carousel-btn" id="home-carousel-prev" type="button" aria-label="Vorig project">&larr;</button>
+            <button class="carousel-btn" id="home-carousel-next" type="button" aria-label="Volgend project">&rarr;</button>
+          </div>
+        </div>
+        <div class="project-carousel-track" id="home-carousel-track" tabindex="0" aria-label="Projecten">
+          <article class="project-carousel-card sketch-card" data-project="aquaclean" tabindex="0" role="button" aria-label="Open AquaClean project"><div class="washi-tape-torn tape-top-right"></div><div class="sketch-card-img-wrap"><img src="images/can_trio.png" alt="AquaClean 3D blikjes serie" data-full="images/can_trio.png"><span class="card-status-badge">Branding & 3D</span></div><div class="sketch-card-body"><span class="sketch-card-category">Branding • Packaging</span><h3 class="sketch-card-title">AquaClean</h3><p class="sketch-card-desc">Een fris watermerk met een eigen visuele identiteit, 3D-verpakking en campagnebeeld.</p><a href="project.html?project=aquaclean" class="sketch-card-link">Bekijk project &rarr;</a></div></article>
+          <article class="project-carousel-card sketch-card" data-project="animation" tabindex="0" role="button" aria-label="Open Poster en Media Design project"><div class="washi-tape-torn tape-top-right"></div><div class="sketch-card-img-wrap"><img src="images/catchme4.png" alt="Media Design poster mockup"><span class="card-status-badge">Poster</span></div><div class="sketch-card-body"><span class="sketch-card-category">Media Design</span><h3 class="sketch-card-title">Optiteling Catch me if you can</h3><p class="sketch-card-desc">Animatie gericht op een nieuwe optiteling voor de film Catch me if you can.</p><a href="project.html?project=animation" class="sketch-card-link">Bekijk project &rarr;</a></div></article>
+          <article class="project-carousel-card sketch-card" data-project="arcadebox" tabindex="0" role="button" aria-label="Open Arcade Box project"><div class="washi-tape-torn tape-top-right"></div><div class="sketch-card-img-wrap"><img src="images/arcadebox1.jpg" alt="Arcade Box concept"><span class="card-status-badge">Concept</span></div><div class="sketch-card-body"><span class="sketch-card-category">Handwerk</span><h3 class="sketch-card-title">Arcade Box</h3><p class="sketch-card-desc">Handgemaakte werkende arcade box voor arcade machines.</p><a href="project.html?project=arcadebox" class="sketch-card-link">Bekijk project &rarr;</a></div></article>
+          <article class="project-carousel-card sketch-card" data-project="work-in-progress" tabindex="0" role="button" aria-label="Open Schetsboek Exploraties project"><div class="washi-tape-torn tape-top-right"></div><div class="sketch-card-img-wrap"><img src="images/visitekaartje.png" alt="Schetsboekonderzoek en ideation"><span class="card-status-badge">Proces</span></div><div class="sketch-card-body"><span class="sketch-card-category">*</span><h3 class="sketch-card-title">Work in progress</h3><p class="sketch-card-desc">Dit project is momenteel in ontwikkeling.</p><a href="project.html?project=work-in-progress" class="sketch-card-link">Bekijk project &rarr;</a></div></article>
+        </div>
+        <div class="carousel-dots" id="home-carousel-dots" aria-label="Project navigatie"></div>
+      </div>
+
+      <!-- Torn paper note (Wireframe 1: "stukje gescheurd papier mc / korte b voor elk los project") -->
+      <div class="ripped-paper-note">
+        <div class="washi-tape-torn tape-top-left" style="top: -14px; left: 40px;"></div>
+        <h4>✦ Korte toelichting: Mijn Werk</h4>
+        <p>
+          "Mijn proces: Ik begin altijd met schetsen vanuit hier vraag ik feedback aan medestudenten. Hierna werk ik deze schetsen uit tot een eerste digitale versie en na verdere feedback tot een eindproduct."
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SITE FOOTER WITH CONTACT FORM (Wireframe 1 & 2) -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Left: Contact Details -->
+        <div class="footer-brand-col">
+          <h3>Raphaella van Eijk</h3>
+          <p>
+            Op zoek naar een nieuwsgierige designer voor een stage, samenwerking of een fris concept? Laten we kennismaken!
+          </p>
+
+          <ul class="footer-contact-items">
+            <li class="footer-contact-item">
+              <span class="footer-icon-badge">✉</span>
+              <div>
+                <strong>E-mail</strong><br>
+                <a href="mailto:rfgvaneijk@gmail.com">rfgvaneijk@gmail.com</a>
+              </div>
+            </li>
+            <li class="footer-contact-item">
+              <span class="footer-icon-badge">in</span>
+              <div>
+                <strong>LinkedIn</strong><br>
+                <a href="https://nl.linkedin.com/in/raphaella-van-eijk-08a696293" target="_blank" rel="noopener noreferrer">linkedin.com/in/raphaella-van-eijk</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Contact Form Card (Wireframe 2: CONTACT-FORMULIER) -->
+        <div class="footer-form-col">
+          <div class="footer-form-card">
+            <h4>Contactformulier</h4>
+            <p class="form-subtitle">Stuur direct een bericht via je e-mailprogramma of kopieer voor LinkedIn.</p>
+
+            <form id="portfolio-contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Je Naam</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="Bijv. Lisa Jansen" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Je E-mailadres</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="naam@bedrijf.nl" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Onderwerp</label>
+                <input type="text" id="contact-subject" class="form-control" placeholder="Stage / Samenwerking / Kennismaking" value="Samenwerking via Portfolio">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Bericht</label>
+                <textarea id="contact-message" class="form-control" placeholder="Hoi Raphaella, ik zag je werk en..." rows="4" required></textarea>
+              </div>
+
+              <div class="form-buttons-row">
+                <button type="button" id="send-email-btn" class="btn btn-primary" title="Open je standaard e-mailprogramma">
+                  ✉️ Verstuur via E-mail
+                </button>
+                <button type="button" id="send-linkedin-btn" class="btn btn-linkedin" title="Kopieer bericht en open LinkedIn">
+                  in Bericht op LinkedIn
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Raphaella van Eijk — Alle rechten voorbehouden.</span>
+        <span>CMD Breda | Avans Hogeschool</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL FOR FULL SCREEN VIEW -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Sluiten">&times;</button>
+      <img src="" alt="" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-msg" id="toast-notification"></div>
+
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>
