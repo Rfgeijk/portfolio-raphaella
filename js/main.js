@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Each set has 3 parts: [part 1, part 2, part 3]
   // ==========================================================================
   const designerTaglines = [
-    ["A little chaotic,", "very curious,", "always creating."],
-    ["Visual storyteller,", "concept explorer,", "detail obsessed."],
-    ["Branding & packaging,", "motion & 3D,", "physical & digital."],
-    ["Driven by curiosity,", "playful & bold,", "crafting experiences."]
+    ["Een beetje chaotisch,", "heel nieuwsgierig,", "altijd aan het maken."],
+    ["Visuele storyteller,", "concept bedenker,", "detail georiënteerd."],
+    ["Branding & verpakkingen,", "motion & 3D,", "fysiek & digitaal."],
+    ["Gedreven door nieuwsgierigheid,", "speels & bold,", "maken van ervaringen."]
   ];
-
+  
   function initHeroTaglineRotator() {
     const rotatingTagline = document.querySelector('.hero-rotating-tagline');
     if (!rotatingTagline) return;
