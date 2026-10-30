@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Each set has 3 parts: [part 1, part 2, part 3]
   // ==========================================================================
   const designerTaglines = [
-    ["Een beetje chaotisch,", "heel nieuwsgierig,", "altijd aan het maken."],
+    ["Een beetje chaotisch,", "heel nieuwsgierig,", "altijd aan het creëren."],
     ["Visuele storyteller,", "concept bedenker,", "detail georiënteerd."],
     ["Branding & verpakkingen,", "motion & 3D,", "fysiek & digitaal."],
     ["Gedreven door nieuwsgierigheid,", "speels & bold,", "maken van ervaringen."]
