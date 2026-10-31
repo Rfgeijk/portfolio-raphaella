@@ -437,7 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
       description: 'Een leuk spelletje gebaseerd op de klassieke Flappy Bird.',
       images: [
         {
-          img: 'images/game1.png',
+          img: 'images/can_trio.png',
           fullImg: 'images/can_trio.png',
           title: 'AquaClean 3D Blikjes Serie — Eindproduct',
           hint: 'Eindproduct: 3D can packaging render met waterdruppels en metallic finish'
@@ -567,13 +567,13 @@ document.addEventListener('DOMContentLoaded', () => {
         {
           type: 'video',
           src: 'images/Echteindversiefilmpjegoose.mp4',
-          poster: 'images/Game1.png',
-          title: 'Unity Flappy Bird — Gameplayvideo',
-          hint: 'Bekijk de gameplayvideo'
+          poster: 'images/game1.png',
+          title: 'Unity Flappy Bird — Gameplay video',
+          hint: 'Bekijk de gameplay video'
         },
         {
-          img: 'images/Game1.png',
-          fullImg: 'images/Game1.png',
+          img: 'images/game1.png',
+          fullImg: 'images/game1.png',
           title: 'Unity Flappy Bird — Screenshot 1',
           hint: 'Screenshot van de game'
         },
